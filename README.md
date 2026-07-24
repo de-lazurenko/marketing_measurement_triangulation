@@ -128,6 +128,25 @@ Difference-in-Differences (DiD) estimated the incremental lift of paid_social:
 | Need to prove causal impact for budget defense | Incrementality Testing |
 | High-stakes budget decision | Triangulate all three |
 
+
+---
+
+## Interactive Dashboard
+
+Run the Streamlit dashboard locally:
+
+```bash
+conda activate MMT
+streamlit run dashboard/app.py
+```
+
+Features:
+- Adjust true lift and weekly budget per channel via sidebar sliders
+- MTA Comparison — all attribution methods vs ground truth
+- MMM Analysis — revenue decomposition with adstock visualization  
+- Incrementality — geo holdout experiment and DiD results
+- Final Benchmarking — MAE comparison and decision framework
+
 ---
 
 ## Stack
